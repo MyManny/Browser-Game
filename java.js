@@ -144,6 +144,15 @@ function addCategory() {
 
     column.appendChild(genreTitle)
     game.append(column)
+// create card class
+    category.questions.forEach(question => {
+        const card = document.createElement('div')
+        card.classList.add('card')
+        column.append(card)
+
+        
+    })
+
 }
 
 jeopardyCategories.forEach(category => addCategory(category))
