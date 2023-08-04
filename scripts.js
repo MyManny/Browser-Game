@@ -124,7 +124,8 @@ const audio = document.getElementById('backgroundAudio');
    
   }
   
-  const restartButton = document.getElementById('restartButton');
-restartButton.addEventListener('click', initializeGame);
-// Call initializeGame once to start the game initially.
-initializeGame();
+  const refreshButton = document.getElementById('refreshButton');
+  refreshButton.addEventListener('click', function() {
+    location.reload();
+  });
+  

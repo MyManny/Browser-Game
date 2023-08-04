@@ -24,7 +24,7 @@ body {
 
 .card {
     width: 185px;
-    height: 150px;
+    height: 140px;
     background-color: rgb(26,26,255);
     border-radius: 20px;
     border: solid yellow 5px;
@@ -35,6 +35,7 @@ body {
 }
 .correct-answer {
   background-color: #10d84c;
+
 }
 
 .wrong-answer {
