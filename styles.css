@@ -9,6 +9,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgb(4, 21, 255); 
+  background-image: url('.vscode/th-3531393012');
+  background-size: cover;
   color: rgb(255,255,255);
   display: flex; 
   justify-content: center;
