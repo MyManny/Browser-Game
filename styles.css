@@ -56,5 +56,8 @@ body {
 }
 
 button {
+  background-color: yellow;
   margin: 5px;
+  border-radius: 5px
+  
 }
