@@ -120,3 +120,11 @@ const audio = document.getElementById('backgroundAudio');
   }
 
   playAudio();
+  function initializeGame() {
+   
+  }
+  
+  const restartButton = document.getElementById('restartButton');
+restartButton.addEventListener('click', initializeGame);
+// Call initializeGame once to start the game initially.
+initializeGame();
