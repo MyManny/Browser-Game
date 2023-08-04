@@ -19,11 +19,12 @@ body {
 
 #game {
     display:flex;
+    text-align:center;
 }
 
 .card {
-    width: 200px;
-    height: 200px;
+    width: 185px;
+    height: 150px;
     background-color: rgb(26,26,255);
     border-radius: 20px;
     border: solid yellow 5px;
@@ -38,14 +39,17 @@ body {
 
 .wrong-answer {
   background-color: #ce0f0f;
+
 }
 
 .true-button {
   background-color: #63b36e;
+  border-radius: 5px
 }
 
 .false-button {
   background-color: #aa231e;
+  border-radius: 5px
 }
 
 button {

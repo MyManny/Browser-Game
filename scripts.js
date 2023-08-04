@@ -104,3 +104,19 @@ function getResult() {
     }
     cardOfButton.removeEventListener('click',flipCard)
 }
+const audio = document.getElementById('backgroundAudio');
+
+  
+  function playAudio() {
+    audio.play();
+  }
+
+  function pauseAudio() {
+    audio.pause();
+  }
+
+  function setVolume(volume) {
+    audio.volume = volume; 
+  }
+
+  playAudio();
