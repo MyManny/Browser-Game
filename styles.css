@@ -27,7 +27,7 @@ body {
 .card {
     width: 185px;
     height: 140px;
-    background-color: rgb(26,26,255);
+    background-color: rgb(14, 14, 247);
     border-radius: 20px;
     border: solid yellow 5px;
     text-align: center;
@@ -47,7 +47,8 @@ body {
 
 .true-button {
   background-color: #63b36e;
-  border-radius: 5px
+  border-radius: 5px;
+  font-size: 10000;
 }
 
 .false-button {
