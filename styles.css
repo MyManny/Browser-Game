@@ -24,7 +24,7 @@ body {
     text-align:center;
 }
 
-.card {
+.table {
     width: 185px;
     height: 140px;
     background-color: rgb(14, 14, 247);
@@ -35,23 +35,24 @@ body {
     margin: 5px;
     padding: 10px;
 }
-.correct-answer {
+.correct {
   background-color: #10d84c;
+  text-align: center;
 
 }
 
-.wrong-answer {
+.wrong {
   background-color: #ce0f0f;
 
 }
 
-.true-button {
+.true {
   background-color: #63b36e;
   border-radius: 5px;
   font-size: 10000;
 }
 
-.false-button {
+.false {
   background-color: #aa231e;
   border-radius: 5px
 }
@@ -61,4 +62,7 @@ button {
   margin: 5px;
   border-radius: 5px
   
+}
+.data-value, .correct {
+font-size: 100px;
 }

@@ -33,7 +33,7 @@ function addGenre(genre) {
 
     levels.forEach(level => {
         const card = document.createElement('div')
-        card.classList.add('card')
+        card.classList.add('table')
         column.append(card)
 
         if (level === 'easy') {
@@ -68,25 +68,25 @@ function flipCard() {
     const falseButton = document.createElement('button')
     trueButton.innerHTML = 'True'
     falseButton.innerHTML = 'False'
-    trueButton.classList.add('true-button')
-    falseButton.classList.add('false-button')
+    trueButton.classList.add('true')
+    falseButton.classList.add('false')
     trueButton.addEventListener('click', getResult)
     falseButton.addEventListener('click', getResult)
     textDisplay.innerHTML = this.getAttribute('data-question')
     this.append(textDisplay, trueButton, falseButton)
 
-    const allCards = Array.from(document.querySelectorAll('.card'))
+    const allCards = Array.from(document.querySelectorAll('.table'))
     allCards.forEach(card => card.removeEventListener('click', flipCard))
 }
 function getResult() {
-    const allCards = Array.from(document.querySelectorAll('.card'))
+    const allCards = Array.from(document.querySelectorAll('.table'))
     allCards.forEach(card => card.addEventListener('click', flipCard))
 
     const cardOfButton = this.parentElement
     if (cardOfButton.getAttribute('data-answer') === this.innerHTML) {
         score = score + parseInt(cardOfButton.getAttribute('data-value'))
         scoreDisplay.innerHTML = score
-        cardOfButton.classList.add('correct-answer')
+        cardOfButton.classList.add('correct')
         setTimeout(() => {
             while (cardOfButton.firstChild) {
                 cardOfButton.removeChild(cardOfButton.lastChild)
@@ -94,7 +94,7 @@ function getResult() {
             cardOfButton.innerHTML = cardOfButton.getAttribute('data-value')
         }, 100)
     } else {
-        cardOfButton.classList.add('wrong-answer')
+        cardOfButton.classList.add('wrong')
         setTimeout(() => {
             while (cardOfButton.firstChild) {
                 cardOfButton.removeChild(cardOfButton.lastChild)
