@@ -27,13 +27,22 @@ body {
 .table {
     width: 185px;
     height: 140px;
-    background-color: rgb(14, 14, 247);
+    /* background-color: rgb(14, 14, 247); */
+    background-color: #32266F;
+    border-top-color: solid #2421C6 5px;
+    border-left-color:solid #2421C6 5px;
+    border-bottom-color:solid #2B1208 5px;
+    border-right-color:solid #2B1208 5px;
     border-radius: 20px;
-    border: solid yellow 5px;
+    border:solid #2421C6 5px;
+    /* border: solid rgb(#2421C6) 5px; */
+    /* border: solid yellow 5px; */
     text-align: center;
     font-size:100px;
     margin: 5px;
     padding: 10px;
+    color: yellow;
+    font-family: 'Prompt', sans-serif;
 }
 .correct {
   background-color: #10d84c;
@@ -60,7 +69,8 @@ body {
 }
 
 button {
-  background-color: rgb(14, 14, 247);;
+  background-color: #32266F;
+  /* background-color: rgb(14, 14, 247); */
   margin: 5px;
   color: rgb(255,255,255);
   border-radius: 5px;
