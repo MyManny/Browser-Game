@@ -3,8 +3,8 @@ const scoreDisplay = document.getElementById('score')
 let score = 0
 // create genres, level of difficulty
 // create tables with javascript link to scores
-// fetch premade Api 
-// create flipcard Effect,results 
+ 
+ 
 const genres = [
     {
     name: 'Books',
@@ -45,10 +45,10 @@ function addGenre(genre) {
         if (level === 'hard') {
             card.innerHTML = 300
         }
-        // if (level === 'hard') {
+        // if (level === 'harder') {
         //     card.innerHTML = 400
         // }
-
+// fetch premade Api
         fetch(`https://opentdb.com/api.php?amount=1&category=${genre.id}&difficulty=${level}&type=boolean`)
             .then(response => response.json())
             .then(data => {
@@ -62,7 +62,7 @@ function addGenre(genre) {
     })
 }
 genres.forEach(genre => addGenre(genre))
-
+// create flipcard Effect,results
 function flipCard() {
     this.innerHTML = ''
     this.style.fontSize = '15px'
