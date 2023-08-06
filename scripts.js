@@ -45,6 +45,9 @@ function addGenre(genre) {
         if (level === 'hard') {
             card.innerHTML = 300
         }
+        // if (level === 'hard') {
+        //     card.innerHTML = 400
+        // }
 
         fetch(`https://opentdb.com/api.php?amount=1&category=${genre.id}&difficulty=${level}&type=boolean`)
             .then(response => response.json())
