@@ -139,7 +139,7 @@ const audio = document.getElementById('backgroundAudio');
     backgroundAudio.muted = !backgroundAudio.muted;
 
     
-    // var muteButton = document.querySelector('button');
-    // muteButton.textContent = backgroundAudio.muted ? 'Unmute' : 'Mute';
+    var muteButton = document.querySelector('.mute');
+    muteButton.textContent = backgroundAudio.muted ? 'Unmute' : 'Mute';
   }
   
