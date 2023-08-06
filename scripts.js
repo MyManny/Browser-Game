@@ -131,4 +131,15 @@ const audio = document.getElementById('backgroundAudio');
   refreshButton.addEventListener('click', function() {
     location.reload();
   });
+  var backgroundAudio = document.getElementById('backgroundAudio');
+
+  // Function to toggle mute/unmute of the audio
+  function toggleMute() {
+    // Toggle the muted property of the audio element
+    backgroundAudio.muted = !backgroundAudio.muted;
+
+    
+    // var muteButton = document.querySelector('button');
+    // muteButton.textContent = backgroundAudio.muted ? 'Unmute' : 'Mute';
+  }
   
