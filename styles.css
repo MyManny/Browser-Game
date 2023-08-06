@@ -38,12 +38,13 @@ body {
 .correct {
   background-color: #10d84c;
   text-align: center;
-
+  /* background-image: url('.vscode/th-4256852094'); */
+  font-size:100px;
 }
 
 .wrong {
   background-color: #ce0f0f;
-
+  /* background-image: url('.vscode/tryAgain'); */
 }
 
 .true {
